@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "namechanger",
+	"version": "${version}",
+	"name": "Name Changer",
+	"description": "This mod allows you to change your client-side display name.",
+	"authors": [
+		"tnoctua"
+	],
+	"contributors": [
+		"u/xrzeee"
+	],
+	"contact": {
+		"sources": "https://github.com/tnoctua/name-changer",
+		"issues": "https://github.com/tnoctua/name-changer/issues"
+	},
+	"license": "LGPL-2.1",
+	"icon": "assets/namechanger/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"me.tnoctua.namechanger.NameChanger"
+		]
+	},
+	"mixins": [
+		"namechanger.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
